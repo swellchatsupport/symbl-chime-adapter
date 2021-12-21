@@ -1,13 +1,15 @@
-var currentCaption: Caption = null;
-var captionNum = 0;
-var ws: WebSocket = null;
-var symblSocket: SymblSocket = null;
+/* eslint-disable eslint-comments/no-unlimited-disable */
+/* eslint-disable */
+let currentCaption: Caption = null;
+let captionNum = 0;
+let ws: WebSocket = null;
+let symblSocket: SymblSocket = null;
 const insights: any = [];
 const topics : any = [];
 const trackers : any = [];
 
 const hashCode = function(s: string): number {
-  var h = 0, l = s.length, i = 0;
+  let h = 0, l = s.length, i = 0;
   if (l > 0)
     while (i < l)
       h = (h << 5) - h + s.charCodeAt(i++) | 0;
